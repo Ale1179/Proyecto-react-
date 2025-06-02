@@ -1,38 +1,116 @@
-.App {
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.user-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.user-form input {
+  flex: 1 1 120px;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.user-form button {
+  padding: 8px 16px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form .cancel-btn {
+  background: #e53935;
+}
+
+.search-bar {
+  margin-bottom: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar input {
+  width: 90%;
+  padding: 7px 10px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  background: #9d9c9c;
+  margin-bottom: 8px;
+  padding: 10px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-.App-link {
-  color: #61dafb;
+.user-name {
+  flex: 1 1 90px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-email {
+  flex: 2 1 180px;
+  color: #555;
+}
+
+.user-age {
+  width: 60px;
+  text-align: right;
+  color: #888;
+}
+
+.edit-btn {
+  background: #ffe082;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #e57373;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.no-users {
+  text-align: center;
+  color: #888;
+  margin-top: 30px;
+}
+
+.user-count {
+  margin-top: 18px;
+  text-align: right;
+  font-size: 1.04em;
+  color: #222;
 }
